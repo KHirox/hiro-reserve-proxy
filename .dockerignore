@@ -1,0 +1,23 @@
+# Build stage
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+
+# Runtime stage
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app .
+
+# Create non-root user
+RUN addgroup -S khirox && adduser -S khirox -G khirox
+USER khirox
+
+# Create required directories
+RUN mkdir -p /app/logs && chown khirox:khirox /app/logs
+RUN mkdir -p /app/certs && chown khirox:khirox /app/certs
+
+EXPOSE 88 444
+ENV NODE_ENV=production
+CMD ["node", "src/server.js"]

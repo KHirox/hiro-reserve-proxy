@@ -1,0 +1,49 @@
+ KHirox Enhanced Open Source License
+
+ Copyright Notice
+Primary Copyright (c) 2025 KHirox  
+Original Author Contributions Copyright (c) 2025 Rafie Hasannudin
+
+ 1. Definitions
+"Software" includes all source code, binaries, documentation, and related materials.  
+"Derivative Works" means any modification, adaptation, or extension of the Software.
+
+ 2. Grant of Rights
+Subject to the terms below, permission is granted to:
+- Use, copy, and execute the Software
+- Create and distribute Derivative Works
+- Sublicense and charge fees for distribution
+
+ 3. Conditions
+ 3.1 Attribution Requirements
+All distributions must include:
+- Original copyright notices
+- This license document
+- Prominent credit to KHirox as the primary maintainer
+
+ 3.2 Modification Requirements
+Derivative Works must:
+- Be clearly marked as modified versions
+- Not use KHirox trademarks without permission
+- Include technical documentation of changes
+
+ 4. Additional Clauses
+ 4.1 Patent Grant
+KHirox grants a limited patent license covering only implementations of the original Software.
+
+ 4.2 Liability Limitations
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. IN NO EVENT SHALL KHirox BE LIABLE FOR:
+- Special, incidental or consequential damages
+- Lost profits or data
+- Business interruption costs
+
+ 4.3 Third-Party Components
+Any third-party components retain their original licenses.
+
+ 5. Termination
+This license terminates automatically if you:
+- Fail to comply with its terms
+- Initiate patent litigation against KHirox
+
+ 6. Governing Law
+This license is governed by the laws of [Jurisdiction], without regard to conflict of law principles.

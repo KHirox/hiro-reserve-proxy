@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "name": "khirox-reverse-proxy",
+  "builds": [
+    {
+      "src": "src/app.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "50mb",
+        "includeFiles": [
+          "config/**",
+          "src/core/**"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/app.js",
+      "headers": {
+        "X-Powered-By": "KHirox",
+        "X-Server": "KHirox Reverse Proxy"
+      }
+    }
+  ]
+}
